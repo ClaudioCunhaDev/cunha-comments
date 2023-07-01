@@ -65,7 +65,7 @@ function App() {
           onChange={handleComment}
           style={{ height: "20vh", padding: "0.5rem" }}
         />
-        <button>Send Comment</button>
+        <button style={{ color: "black" }}>Send Comment</button>
         <hr />
         {state.length > 0 ? (
           state?.map((ele, i) => {
@@ -78,7 +78,12 @@ function App() {
             );
           })
         ) : (
-          <p style={{ borderBottom: "1px solid black" }}>
+          <p
+            style={{
+              borderBottom: "2px solid white",
+              backgroundColor: "rgb(80, 50, 60)",
+            }}
+          >
             Seja o primeiro a comentar!
           </p>
         )}
